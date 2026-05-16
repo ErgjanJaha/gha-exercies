@@ -1,0 +1,25 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+
+# Go — built binaries only
+services/quote-engine/quote-engine
+exercises/02-optimize-image/quote-engine
+*.test
+*.exe
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Local
+/tmp/

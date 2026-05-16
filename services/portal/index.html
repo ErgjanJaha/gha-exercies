@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BigVerify Insurance Portal</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 4rem auto; padding: 0 1rem; }
+    h1 { color: #1a365d; }
+    section { margin-top: 2rem; padding: 1rem; border: 1px solid #ddd; border-radius: 6px; }
+    code { background: #f4f4f4; padding: 0.1em 0.3em; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <h1>BigVerify Insurance Portal</h1>
+  <p>Demo frontend for the policy, claims, and quote services.</p>
+
+  <section>
+    <h2>Status</h2>
+    <pre id="status">loading...</pre>
+  </section>
+
+  <section>
+    <h2>Backend endpoints</h2>
+    <ul>
+      <li><code>http://localhost:3000/policies/P-1001</code></li>
+      <li><code>http://localhost:5000/claims/C-2001</code></li>
+      <li><code>http://localhost:8080/quote</code></li>
+    </ul>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

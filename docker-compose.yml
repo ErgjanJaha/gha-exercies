@@ -1,0 +1,28 @@
+services:
+  policy-api:
+    build: ./services/policy-api
+    container_name: policy-api
+    ports:
+      - "3000:3000"
+
+  claims-service:
+    build: ./services/claims-service
+    container_name: claims-service
+    ports:
+      - "5000:5000"
+
+  quote-engine:
+    build: ./services/quote-engine
+    container_name: quote-engine
+    ports:
+      - "8080:8080"
+
+  portal:
+    build: ./services/portal
+    container_name: portal
+    ports:
+      - "8000:80"
+    depends_on:
+      - policy-api
+      - claims-service
+      - quote-engine
