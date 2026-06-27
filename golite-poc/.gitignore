@@ -1,0 +1,8 @@
+# Rust build artifacts (Part 2)
+hyperlight/host/target/
+# Cargo.lock is omitted: this is an example crate pinned only by ^0.16 in Cargo.toml
+hyperlight/host/Cargo.lock
+
+# Go build artifacts
+golite
+*.test

@@ -1,0 +1,15 @@
+[package]
+name = "golite-hyperlight-host"
+version = "0.1.0"
+edition = "2021"
+description = "GoLite PoC: real Hyperlight host wiring the GoLite lifecycle (boot→snapshot→restore-per-call)"
+
+[[bin]]
+name = "golite-host"
+path = "src/main.rs"
+
+[dependencies]
+# The real Hyperlight VMM. Provides UninitializedSandbox/MultiUseSandbox,
+# host-function registration, and the snapshot()/restore() API that GoLite's
+# restore-per-call lifecycle is built on.
+hyperlight-host = "0.16"
